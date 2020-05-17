@@ -190,10 +190,6 @@ background-color: papayawhip;
 button{
     background-color: papayawhip;
 }
-
-.social img :hover {
-    opacity: 1;
-}
 .social img{
 height: 40px;
 width: 40px;
