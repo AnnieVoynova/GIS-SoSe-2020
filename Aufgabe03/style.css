@@ -201,6 +201,8 @@ margin-top: -180px;
 margin-bottom: 250px;
 margin-left: 400px;
 }
-
+.social img:hover{
+    opacity: 1;
+}
 
 
