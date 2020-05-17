@@ -1,0 +1,210 @@
+body {
+    background-image: url(bg.png);
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kreis {
+border-radius: 50%;
+width: 800px;
+height: 600px;
+margin-top: -300px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+background-color: plum;
+}
+
+#Startseite {
+    color: purple;
+    font-size: 40px;
+    padding-top: 350px;
+    text-shadow: 4px 4px pink;
+    text-decoration: underline;
+    }
+
+    #navigation {
+        position:fixed;
+        top: 0px;
+       margin-left: 1000px;
+    }
+    
+nav{
+    background-color: palevioletred;
+    width: 320px;
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 5px solid purple;
+}
+header nav a{
+    color: papayawhip;
+    text-decoration: none;
+}
+header ul {
+    padding: -20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -25px;
+    margin-right: 3px;
+}
+header li {
+display: inline;
+font-size: 18px;
+padding-bottom: 20px;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+li a :hover {
+    color: rebeccapurple;
+}
+
+#aktuelleSeite {
+    color: purple;
+}
+
+.pictures{
+    border-radius: 5px;
+    border: 6px solid purple;
+}
+.videos {
+    border-radius: 6px;
+    border: 5px solid purple;
+}
+.musik{
+    border-radius: 35px;
+    border: 6px solid purple;
+}
+
+main h1 {
+  background: plum;
+  color: purple;
+  text-shadow: 4px 4px pink;
+
+  width: 300px;
+  
+  padding: 10px 10px 15px 10px;
+  border: 5px solid purple;
+  border-radius: 40px;
+  margin: 100px 600px 40px 600px;
+  
+  }
+
+main p {
+    color: purple;
+    font-size: 18px;
+}
+
+.uberschrift {
+    background-color: pink;
+    color: purple;
+    width: fit-content;
+    text-shadow: 4px 4px plum;
+    padding: 10px;
+    margin: 50px 400px 10px 350px;
+    border: 5px solid purple;
+    border-radius: 60px;
+}
+
+footer{
+    background-color: plum;
+    color: purple;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 100px 500px 0px 500px;
+}
+footer a{
+    text-decoration: none;
+    text-shadow: 4px 4px plum;
+    color: purple;
+    font-size: 20px;
+    
+}
+#vorstellung{
+    background: plum;
+  color: purple;
+  text-shadow: 4px 4px pink;
+
+  width: 300px;
+  
+  padding: 10px 10px 15px 10px;
+  border: 5px solid purple;
+  border-radius: 40px;
+  margin: 100px 600px 40px 600px;
+}
+
+.list{
+    background-color: pink;
+    color: purple;
+    width: 500px;
+    text-shadow: 4px 4px plum;
+    padding: 10px;
+    margin: 50px 500px 10px 500px;
+    border: 5px solid purple;
+    border-radius: 60px;
+}
+
+main li{
+display: block;
+}
+
+#hobby{
+  background: plum;
+  color: purple;
+  text-shadow: 4px 4px pink;
+
+  width: 300px;
+  
+  padding: 10px 10px 15px 10px;
+  border: 5px solid purple;
+  border-radius: 40px;
+  margin: 100px 600px 10px 600px;
+}
+
+form{
+    background: plum;
+    color: purple;
+    text-shadow: 4px 4px pink;
+  
+    width: max-content;
+    
+    padding: 20px 20px 25px 20px;
+    border: 5px solid purple;
+    border-radius: 40px;
+    margin: 20px 150px 10px 350px;
+    text-align: left;
+}
+
+.data{
+background-color: papayawhip;
+}
+#text{
+    background-color: papayawhip;
+}
+button{
+    background-color: papayawhip;
+}
+
+.social img :hover {
+    opacity: 1;
+}
+.social img{
+height: 40px;
+width: 40px;
+opacity: 0.7;
+}
+.social{
+position: sticky;
+margin-top: -180px;
+margin-bottom: 250px;
+margin-left: 400px;
+}
+
+
+
