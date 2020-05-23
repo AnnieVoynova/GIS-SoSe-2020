@@ -174,6 +174,41 @@ h3 ~ h4 { /*6te Komplexe Selektor */
      width: 100%;
      margin-left: 15%;
  }
+ .artikeln { 
+    width: 100%;
+    align-items: center;
+    }
+    main .paints{
+        align-content: center;
+        border:6px solid lightcoral;
+        border-radius: 40px;
+        background-color: lightpink;
+        width: 100%;
+        padding: 1%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    main .sketch{
+        align-content: center;
+        border:6px solid lightcoral;
+        background-color: lightpink;
+        border-radius: 40px;
+        width: 100%;
+        padding: 1%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    main .ink {
+        align-content: center;
+        border:6px solid lightcoral;
+        background-color: lightpink;
+        border-radius: 40px;
+        width: 100%;
+        padding: 1%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    
 }
 
 @media screen and (min-width: 600px) and (max-width:1024px) {
@@ -181,14 +216,16 @@ h3 ~ h4 { /*6te Komplexe Selektor */
     .artikeln{
         width: 100%;
     }
-    
+    body header {
+        width: 150%;
+    }
     header h1{
       font-size: 40px; 
       margin-left: -15%;
     }
     img[src="logo.png"] {
-        margin-left: -70%;
-        margin-bottom: -12%;
+        margin-left: -50%;
+        margin-bottom: -10%;
         margin-top: 5%;
     }
     header nav a{
@@ -200,6 +237,32 @@ h3 ~ h4 { /*6te Komplexe Selektor */
     main a img {
         width:80%
     }
+    main .paints{
+        width: 40%;
+        
+    }
+    main .sketch{
+        align-content: center;
+        border:6px solid lightcoral;
+        background-color: lightpink;
+        border-radius: 40px;
+        width: 40%;
+        padding: 1%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    main .ink {
+        align-content: center;
+        border:6px solid lightcoral;
+        background-color: lightpink;
+        border-radius: 40px;
+        width: 40%;
+        padding: 1%;
+        margin: auto;
+        margin-bottom: 10%;
+        margin-top: 2%;
+    }
+    
 }
 @media screen and (min-width:1024px) {
     img[src="logo.png"] {
