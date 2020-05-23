@@ -186,6 +186,9 @@ h3 ~ h4 { /*6te Komplexe Selektor */
 
 }
 @media screen and (min-width:1024px) {
-    
+    img[src="logo.png"] {
+     margin-left: -75%;
+     margin-bottom: -7%;
+    }
     
 }
