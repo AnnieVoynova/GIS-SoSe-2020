@@ -6,49 +6,50 @@ body{
     align-items: center;
     margin: 0;
 }
-body header{ /*1st Kompoexe Selektor*/
+body header{ /*1st Komplexe Selektor*/
 background-image: url(header2.png);
-padding: 5px;
-border: 5px solid lightcoral
+padding: 1%;
+border: 5px solid lightcoral;
+
 }
 header>h1{ /*2nd Komplexe Selektor*/
-    font-size: 40px;
+    font-size: 250%;
     color: lightcoral;
-    margin-left: -1000px;
+    margin-left: -50%;
     text-shadow: 5px 5px pink;
     text-decoration: underline;
-    margin-top: 60px;
+    margin-top: 3%;
 }
 img[src="logo.png"] { /*3te Komplexe Selektor-Attribut Selektor*/
-   padding: -20px;
-   margin-left: -1400px;
-   margin-bottom: -140px;
+   margin-left: -70%;
+   margin-bottom: -7%;
 }
 header nav{
     position:fixed;
-    bottom: 930px;
-    right: -20px;
+    bottom: 96%;
+    right: -1%;
        
     background-color: rgb(248, 169, 196);
-    width: 1895px;
-    height:30px;
-    margin-right: 20px;
-    margin-left: 20px;
+    width: 100%;
+    height:3%;
+    margin-right: 1%;
+    
     border-radius: 5px;
     border: 5px solid lightcoral
 }
 
 img[src="shoppingcard.png"] {
-    margin-right: -1830px;
-    margin-bottom: 0px;
+    margin-right: -95%;
+    margin-bottom: 0%;
 }
 
 header nav a{
     color: papayawhip;
     text-decoration: none;
-    font-size: 20px;
-    padding-right: 190px;
-    padding-left: 190px;
+    font-size: 120%;
+    padding-right: 9%;
+    padding-left: 9%;
+    
 }
 nav a:hover{ /*4te Komplexe Selektor*/
     color:lightcoral;
@@ -68,8 +69,11 @@ footer a:hover {
     color: rgb(128, 64, 124);
     font-weight: bold;
 }
+main{
+    position: inherit;
+}
 main a{
-    padding: 20px;
+    padding: 1%;
 }
 
 .menu {
@@ -86,33 +90,33 @@ main .ink {
     border:6px solid lightcoral;
     background-color: lightpink;
     border-radius: 40px;
-    width: 400px;
-    height:400px;
-    padding: 10px;
+    width: 40%;
+    height:40%;
+    padding: 1%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 main .sketch{
     align-content: center;
     border:6px solid lightcoral;
     background-color: lightpink;
     border-radius: 40px;
-    width: 400px;
-    height:400px;
-    padding: 10px;
+    width: 40%;
+    height:40%;
+    padding: 1%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 main .paints{
     align-content: center;
     border:6px solid lightcoral;
     border-radius: 40px;
     background-color: lightpink;
-    width: 400px;
-    height:400px;
-    padding: 10px;
+    width: 40%;
+    height:40%;
+    padding: 1%;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 10%;
 }
 
 button {
@@ -127,13 +131,61 @@ h3 ~ h4 { /*6te Komplexe Selektor */
     font-size: 16px;
 }
 .artikeln { /*flexbox benutzt*/
-    align-content: center;
-    padding: 50px;
-    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 400px;
+    margin-left: 20%;
 }
+
 @media screen and (max-width:600px) {
+  .artikeln img { max-width: 100%; height: auto; }
+  .artikeln{
+      width: 100%;
+  }
+  header h1{
+      font-size: 25px;
+      margin-left: 10%;
+  }
+  img[src="logo.png"] {
+     margin-top: 1%;
+     margin-left: -70%;
+     margin-bottom: -20%;
+  }
+  img[src="shoppingcard.png"] {
+      margin-right: -80%;
+      margin-bottom: 1%;
+  }
+  header nav a{
+    padding: 1%;
+    font-size: 13px;
+}
+
+  
+}
+
+@media screen and (min-width: 600px) and (max-width:1024px) {
+    .artikeln img { max-width: 100%; height: auto; }
+    .artikeln{
+        width: 100%;
+    }
+    header h1{
+      font-size: 40px; 
+      margin-left: -15%;
+    }
+    img[src="logo.png"] {
+        margin-left: -70%;
+        margin-bottom: -12%;
+        margin-top: 5%;
+    }
+    header nav a{
+        padding: 5%;
+    }
+
+}
+@media screen and (min-width:1024px) {
+    
     
 }
