@@ -5,6 +5,7 @@ body{
     text-align: center;
     align-items: center;
     margin: 0;
+    max-width: 100%;
 }
 body header{ /*1st Komplexe Selektor*/
 background-image: url(header2.png);
@@ -142,6 +143,9 @@ h3 ~ h4 { /*6te Komplexe Selektor */
 }
 
 @media screen and (max-width:600px) {
+    body{
+        max-width: 100%;
+    }
   .artikeln img { max-width: 100%; height: auto; }
   .artikeln{
       width: 100%;
@@ -212,19 +216,24 @@ h3 ~ h4 { /*6te Komplexe Selektor */
 }
 
 @media screen and (min-width: 600px) and (max-width:1024px) {
+    body{
+        max-width: 100%;
+    }
     .artikeln img { max-width: 100%; height: auto; }
     .artikeln{
+        
         width: 100%;
+        margin-left: -6%;
     }
     body header {
-        width: 150%;
+        width: 100%;
     }
     header h1{
       font-size: 40px; 
-      margin-left: -15%;
+      margin-left: -40%;
     }
     img[src="logo.png"] {
-        margin-left: -50%;
+        margin-left: -80%;
         margin-bottom: -10%;
         margin-top: 5%;
     }
