@@ -9,9 +9,8 @@ body{
 }
 body header{ /*1st Komplexe Selektor*/
 background-image: url(header2.png);
-padding: 1%;
 border: 5px solid lightcoral;
-width: 97.5%;
+
 
 }
 header>h1{ /*2nd Komplexe Selektor*/
