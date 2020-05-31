@@ -24,44 +24,62 @@ var Aufgabe05;
     for (let index = 0; index < artikelnInking.length; index++) {
         let containerArtikeln = document.createElement("div"); //div element für jede artikel
         document.getElementById("inking")?.appendChild(containerArtikeln); //main div von html dokument
+        containerArtikeln.id = "content" + index;
         let titelArtikeln = document.createElement("h3"); //titel des artikels
         titelArtikeln.innerHTML = artikelnInking[index].name;
+        document.getElementById("content" + index)?.appendChild(titelArtikeln);
         let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
         beschreibungArtikeln.innerHTML = artikelnInking[index].beschreibung;
+        document.getElementById("content" + index)?.appendChild(beschreibungArtikeln);
         let preisArtikeln = document.createElement("p"); //preis hinzufugen
         preisArtikeln.innerHTML = artikelnInking[index].preis;
+        document.getElementById("content" + index)?.appendChild(preisArtikeln);
         let photoArtikeln = document.createElement("img"); //photo des produktes
         photoArtikeln.innerHTML = artikelnInking[index].photo; //auf dem array zugreifen und photo nehmen
+        document.getElementById("content" + index)?.appendChild(photoArtikeln);
         let buttonEinkaufen = document.createElement("button"); //kaufen button erstellen
         buttonEinkaufen.innerHTML = "In den Einkaufswagen";
+        document.getElementById("content" + index)?.appendChild(buttonEinkaufen);
     }
     for (let index = 0; index < artikelnDrawing.length; index++) {
         let containerArtikeln = document.createElement("div"); //div element für jede artikel
         document.getElementById("painting")?.appendChild(containerArtikeln); //main div von html dokument
+        containerArtikeln.id = "paintsContent" + index;
         let titelArtikeln = document.createElement("h3"); //titel des artikels
         titelArtikeln.innerHTML = artikelnDrawing[index].name;
+        document.getElementById("paintsContent" + index)?.appendChild(titelArtikeln);
         let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
         beschreibungArtikeln.innerHTML = artikelnDrawing[index].beschreibung;
+        document.getElementById("paintsContent" + index)?.appendChild(beschreibungArtikeln);
         let preisArtikeln = document.createElement("p"); //preis hinzufugen
         preisArtikeln.innerHTML = artikelnDrawing[index].preis;
+        document.getElementById("paintsContent" + index)?.appendChild(preisArtikeln);
         let photoArtikeln = document.createElement("img"); //photo des produktes
         photoArtikeln.innerHTML = artikelnDrawing[index].photo; //auf dem array zugreifen und photo nehmen
+        document.getElementById("paintsContent" + index)?.appendChild(photoArtikeln);
         let buttonEinkaufen = document.createElement("button"); //kaufen button erstellen
         buttonEinkaufen.innerHTML = "In den Einkaufswagen";
+        document.getElementById("paintsContent" + index)?.appendChild(buttonEinkaufen);
     }
     for (let index = 0; index < artikelnSketchbooks.length; index++) {
         let containerArtikeln = document.createElement("div"); //div element für jede artikel
         document.getElementById("sketchbooks")?.appendChild(containerArtikeln); //main div von html dokument
+        containerArtikeln.id = "sketchContent" + index;
         let titelArtikeln = document.createElement("h3"); //titel des artikels
         titelArtikeln.innerHTML = artikelnSketchbooks[index].name;
+        document.getElementById("sketchContent" + index)?.appendChild(titelArtikeln);
         let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
         beschreibungArtikeln.innerHTML = artikelnSketchbooks[index].beschreibung;
+        document.getElementById("sketchContent" + index)?.appendChild(beschreibungArtikeln);
         let preisArtikeln = document.createElement("p"); //preis hinzufugen
         preisArtikeln.innerHTML = artikelnSketchbooks[index].preis;
+        document.getElementById("sketchContent" + index)?.appendChild(preisArtikeln);
         let photoArtikeln = document.createElement("img"); //photo des produktes
         photoArtikeln.innerHTML = artikelnSketchbooks[index].photo; //auf dem array zugreifen und photo nehmen
+        document.getElementById("sketchContent" + index)?.appendChild(photoArtikeln);
         let buttonEinkaufen = document.createElement("button"); //kaufen button erstellen
         buttonEinkaufen.innerHTML = "In den Einkaufswagen";
+        document.getElementById("sketchContent" + index)?.appendChild(buttonEinkaufen);
     }
 })(Aufgabe05 || (Aufgabe05 = {}));
 //# sourceMappingURL=dateien.js.map
