@@ -4,6 +4,8 @@ body{
     background-image: url(images/4k-wallpaper-background-blur-blurred-background-1242348.jpg);
     padding: 0px;
     max-width: 100%;
+    align-content: center;
+    
 }
 body header {
 background-image: url(images/header2.png);
@@ -51,19 +53,68 @@ footer a:hover {
 color: rgb(128, 64, 124);
 font-weight: bold;
 }
- /*.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- } */
+main{
+    align-content: center;
+    align-items: center;
+}
+nav a:hover{ 
+    color:lightcoral;
+    font-weight: bold;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 370px 370px 370px 370px;
+    align-self: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+ } 
+ .boxArtikeln {
+    align-content: center;
+    border:6px solid lightcoral;
+    background-color: lightpink;
+    border-radius: 30px;
+    
+ }
+ button {
+    background-color: rgb(208, 177, 243);
+}
+.pictures{
+   width: 300px;
+   height: 300px;
+   border-radius: 20px;
+}
 @media screen and (max-width:600px) { /*for handy*/
     header h1{
         font-size: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pictures{
+    width: 250px;
+    height: 250px;
 }
 img[src="images/logo.png"] {
     margin-left: 40%;
 }
 }
 @media screen and (min-width: 600px) and (max-width:1024px) { /*for tablets*/
+ .pictures{
+        width: 300px;
+        height: 300px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 }
-@media screen and (min-width:1024px) { /*for desktop*/
+}
+@media screen and (min-width:1024px) and (max-width:1280px){ /* for macbook*/
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
