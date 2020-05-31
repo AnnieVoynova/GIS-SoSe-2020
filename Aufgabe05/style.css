@@ -51,10 +51,10 @@ footer a:hover {
 color: rgb(128, 64, 124);
 font-weight: bold;
 }
-.grid{
+ /*.grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
- }
+ } */
 @media screen and (max-width:600px) { /*for handy*/
     header h1{
         font-size: 30px;
