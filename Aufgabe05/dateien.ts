@@ -15,7 +15,7 @@ let ink: Artikeln = {name: "Drawing Ink", photo: "images/ink9.jpg", beschreibung
 
 let artikelnInking: Artikeln[] = [pen, artistpen, inkpen, ink]; //Array
 
-// Artikeln erstelen
+
 let watercolors: Artikeln = {name: "Koi Watercolour Paints", photo: "images/koiwater14.jpg", beschreibung: "Travel Set-12 Colours", preis: "15€", category: "painting" };
 let paints: Artikeln = {name: "Watercolour Paints", photo: "images/paints11.jpg", beschreibung: "Box set of 36 Coours x 59ml", preis: "30€", category: "painting" };
 let pencils: Artikeln = {name: "Derwent Watercolour Pencils", photo: "images/waterpencils.jpg", beschreibung: "12 Colours,extremely good quality", preis: "20€", category: "painting" };
@@ -24,7 +24,7 @@ let rowney: Artikeln = {name: "Daler Rowney Acrylic Paints", photo: "images/pain
 
 let artikelnDrawing: Artikeln[] = [watercolors, paints, pencils, acryl , rowney]; //Array
 
-// Artikeln erstelen
+
 let sketch: Artikeln = {name: "Sketchbook Hardcover,Spiral", photo: "images/sketchbook1.jpg", beschreibung: "8,5x11; 80 Pages", preis: "10€", category: "sketchbooks" };
 let sketchrowney: Artikeln = {name: "Sketchbook D.Rowney", photo: "images/Sketchbook2.jpg", beschreibung: "14x11; 80 pages", preis: "15€", category: "sketchbooks" };
 let spocket: Artikeln = {name: "Pocket Sketchbook R.Downey", photo: "images/Sketchbook3.jpg", beschreibung: "3,5x5,5; 144 Pages", preis: "12€", category: "sketchbooks" };
@@ -32,7 +32,7 @@ let mixmedia: Artikeln = {name: "Sketchbook Mix Media", photo: "images/mixmedia.
 
 let artikelnSketchbooks: Artikeln[] = [sketch, sketchrowney, spocket, mixmedia]; //Array
 
-//Kategorie Inking
+
 for (let index = 0; index < artikelnInking.length; index++) {
 
     let containerArtikeln = document.createElement("div"); //div element für jede artikel
@@ -40,20 +40,19 @@ for (let index = 0; index < artikelnInking.length; index++) {
     containerArtikeln.id = "content" + index;
     containerArtikeln.className = "boxArtikeln";
 
-    let titelArtikeln = document.createElement("h3"); //titel des artikels
+    let titelArtikeln = document.createElement("h3"); 
     titelArtikeln.innerHTML = artikelnInking[index].name;
     document.getElementById("content" + index)?.appendChild(titelArtikeln);
 
-    let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
+    let beschreibungArtikeln = document.createElement("h4"); 
     beschreibungArtikeln.innerHTML = artikelnInking[index].beschreibung;
     document.getElementById("content" + index)?.appendChild(beschreibungArtikeln);
 
-    let preisArtikeln = document.createElement("p"); //preis hinzufugen
+    let preisArtikeln = document.createElement("p"); 
     preisArtikeln.innerHTML = artikelnInking[index].preis;
     document.getElementById("content" + index)?.appendChild(preisArtikeln);
 
-    let photoArtikeln = document.createElement("img"); //photo des produktes
-    photoArtikeln.src = artikelnInking[index].photo; //auf dem array zugreifen und photo nehmen
+    let photoArtikeln = document.createElement("img"); 
     document.getElementById("content" + index)?.appendChild(photoArtikeln);
     photoArtikeln.className = "pictures";
    
@@ -67,20 +66,20 @@ for (let index = 0; index < artikelnDrawing.length; index++) {
     containerArtikeln.id = "paintsContent" + index;
     containerArtikeln.className = "boxArtikeln";
 
-    let titelArtikeln = document.createElement("h3"); //titel des artikels
+    let titelArtikeln = document.createElement("h3"); 
     titelArtikeln.innerHTML = artikelnDrawing[index].name;
     document.getElementById("paintsContent" + index)?.appendChild(titelArtikeln);
 
-    let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
+    let beschreibungArtikeln = document.createElement("h4"); 
     beschreibungArtikeln.innerHTML = artikelnDrawing[index].beschreibung;
     document.getElementById("paintsContent" + index)?.appendChild(beschreibungArtikeln);
 
-    let preisArtikeln = document.createElement("p"); //preis hinzufugen
+    let preisArtikeln = document.createElement("p"); 
     preisArtikeln.innerHTML = artikelnDrawing[index].preis;
     document.getElementById("paintsContent" + index)?.appendChild(preisArtikeln);
 
-    let photoArtikeln = document.createElement("img"); //photo des produktes
-    photoArtikeln.src = artikelnDrawing[index].photo; //auf dem array zugreifen und photo nehmen
+    let photoArtikeln = document.createElement("img"); 
+    photoArtikeln.src = artikelnDrawing[index].photo;
     document.getElementById("paintsContent" + index)?.appendChild(photoArtikeln);
     photoArtikeln.className = "pictures";
    
@@ -96,20 +95,20 @@ for (let index = 0; index < artikelnSketchbooks.length; index++) {
     containerArtikeln.id = "sketchContent" + index;
     containerArtikeln.className = "boxArtikeln";
 
-    let titelArtikeln = document.createElement("h3"); //titel des artikels
+    let titelArtikeln = document.createElement("h3"); 
     titelArtikeln.innerHTML = artikelnSketchbooks[index].name;
     document.getElementById("sketchContent" + index)?.appendChild(titelArtikeln);
 
-    let beschreibungArtikeln = document.createElement("h4"); //beschreibung des artikels
+    let beschreibungArtikeln = document.createElement("h4"); 
     beschreibungArtikeln.innerHTML = artikelnSketchbooks[index].beschreibung;
     document.getElementById("sketchContent" + index)?.appendChild(beschreibungArtikeln);
 
-    let preisArtikeln = document.createElement("p"); //preis hinzufugen
+    let preisArtikeln = document.createElement("p"); 
     preisArtikeln.innerHTML = artikelnSketchbooks[index].preis;
     document.getElementById("sketchContent" + index)?.appendChild(preisArtikeln);
 
-    let photoArtikeln = document.createElement("img"); //photo des produktes
-    photoArtikeln.src = artikelnSketchbooks[index].photo; //auf dem array zugreifen und photo nehmen
+    let photoArtikeln = document.createElement("img"); 
+    photoArtikeln.src = artikelnSketchbooks[index].photo; 
     document.getElementById("sketchContent" + index)?.appendChild(photoArtikeln);
     photoArtikeln.className = "pictures";
    
