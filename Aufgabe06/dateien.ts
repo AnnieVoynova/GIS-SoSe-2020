@@ -1,37 +1,36 @@
-namespace Aufgabe05 {
-interface Artikeln { //deklaration der variable
-    name: string;
-    beschreibung: string;
-    preis: string;
-    category: string;
-    photo: string;
-}
-// Artikeln erstelen
-let pen: Artikeln = {name: "Faber Castell PITT Artist Pen", photo: "images/markers5.jpg", beschreibung: "Set of 8,black", preis: "15", category: "inking" };
-let artistpen: Artikeln = {name: "Faber Castell PITT Artist Pen", photo: "images/markers6.jfif", beschreibung: "Shades of Grey, Set of 6 soft brush markers", preis: "12.50", category: "inking" };
-let inkpen: Artikeln = {name: "Ink Pen", photo: "images/ink8.jpg", beschreibung: "Set of 4 different sizes", preis: "15", category: "inking" };
-let ink: Artikeln = {name: "Drawing Ink", photo: "images/ink9.jpg", beschreibung: "SDifferent Colours available,78ml", preis: "4", category: "inking" };
+namespace Aufgabe06 {
+    interface Artikeln { //deklaration der variable
+        name: string;
+        beschreibung: string;
+        price: number;
+        category: string;
+        photo: string;
+   }
+//Artikeln erstelen
+let pen: Artikeln = {name: "Faber Castell PITT Artist Pen", photo: "images/markers5.jpg", beschreibung: "Set of 8,black", price: 15, category: "inking" };
+let artistpen: Artikeln = {name: "Faber Castell PITT Artist Pen", photo: "images/markers6.jfif", beschreibung: "Shades of Grey, Set of 6 soft brush markers", price: 12.50, category: "inking" };
+let inkpen: Artikeln = {name: "Ink Pen", photo: "images/ink8.jpg", beschreibung: "Set of 4 different sizes", price: 15, category: "inking" };
+let ink: Artikeln = {name: "Drawing Ink", photo: "images/ink9.jpg", beschreibung: "SDifferent Colours available,78ml", price: 4, category: "inking" };
 
 
 let artikelnInking: Artikeln[] = [pen, artistpen, inkpen, ink]; //Array
 
 
-let watercolors: Artikeln = {name: "Koi Watercolour Paints", photo: "images/koiwater14.jpg", beschreibung: "Travel Set-12 Colours", preis: "15", category: "painting" };
-let paints: Artikeln = {name: "Watercolour Paints", photo: "images/paints11.jpg", beschreibung: "Box set of 36 Coours x 59ml", preis: "30", category: "painting" };
-let pencils: Artikeln = {name: "Derwent Watercolour Pencils", photo: "images/waterpencils.jpg", beschreibung: "12 Colours,extremely good quality", preis: "20", category: "painting" };
-let acryl: Artikeln = {name: "Mont Marte Acrylic Paints", photo: "images/paints12.jpg", beschreibung: "Set of 24 Colours x 36ml", preis: "30", category: "painting" };
-let rowney: Artikeln = {name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", preis: "Preis:5", category: "painting" };
+let watercolors: Artikeln = {name: "Koi Watercolour Paints", photo: "images/koiwater14.jpg", beschreibung: "Travel Set-12 Colours", price: 15, category: "painting" };
+let paints: Artikeln = {name: "Watercolour Paints", photo: "images/paints11.jpg", beschreibung: "Box set of 36 Coours x 59ml", price: 30, category: "painting" };
+let pencils: Artikeln = {name: "Derwent Watercolour Pencils", photo: "images/waterpencils.jpg", beschreibung: "12 Colours,extremely good quality", price: 20, category: "painting" };
+let acryl: Artikeln = {name: "Mont Marte Acrylic Paints", photo: "images/paints12.jpg", beschreibung: "Set of 24 Colours x 36ml", price: 30, category: "painting" };
+let rowney: Artikeln = {name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", price: 5 , category: "painting" };
 
 let artikelnDrawing: Artikeln[] = [watercolors, paints, pencils, acryl , rowney]; //Array
 
 
-let sketch: Artikeln = {name: "Sketchbook Hardcover,Spiral", photo: "images/sketchbook1.jpg", beschreibung: "8,5x11; 80 Pages", preis: "10", category: "sketchbooks" };
-let sketchrowney: Artikeln = {name: "Sketchbook D.Rowney", photo: "images/Sketchbook2.jpg", beschreibung: "14x11; 80 pages", preis: "15", category: "sketchbooks" };
-let spocket: Artikeln = {name: "Pocket Sketchbook R.Downey", photo: "images/Sketchbook3.jpg", beschreibung: "3,5x5,5; 144 Pages", preis: "12", category: "sketchbooks" };
-let mixmedia: Artikeln = {name: "Sketchbook Mix Media", photo: "images/mixmedia.jpg", beschreibung: "7x10in; 60 Seiten", preis: "20", category: "sketchbooks" };
+let sketch: Artikeln = {name: "Sketchbook Hardcover,Spiral", photo: "images/sketchbook1.jpg", beschreibung: "8,5x11; 80 Pages", price: 10, category: "sketchbooks" };
+let sketchrowney: Artikeln = {name: "Sketchbook D.Rowney", photo: "images/Sketchbook2.jpg", beschreibung: "14x11; 80 pages", price: 15, category: "sketchbooks" };
+let spocket: Artikeln = {name: "Pocket Sketchbook R.Downey", photo: "images/Sketchbook3.jpg", beschreibung: "3,5x5,5; 144 Pages", price: 12, category: "sketchbooks" };
+let mixmedia: Artikeln = {name: "Sketchbook Mix Media", photo: "images/mixmedia.jpg", beschreibung: "7x10in; 60 Seiten", price: 20, category: "sketchbooks" };
 
 let artikelnSketchbooks: Artikeln[] = [sketch, sketchrowney, spocket, mixmedia]; //Array
-
 
 for (let index = 0; index < artikelnInking.length; index++) {
 
@@ -49,7 +48,7 @@ for (let index = 0; index < artikelnInking.length; index++) {
     document.getElementById("content" + index)?.appendChild(beschreibungArtikeln);
 
     let preisArtikeln = document.createElement("p"); 
-    preisArtikeln.innerHTML = artikelnInking[index].preis + "€";
+    preisArtikeln.innerHTML = artikelnInking[index].price + "€";
     document.getElementById("content" + index)?.appendChild(preisArtikeln);
 
     let photoArtikeln = document.createElement("img"); 
@@ -61,6 +60,7 @@ for (let index = 0; index < artikelnInking.length; index++) {
     buttonEinkaufen.innerHTML = "In den Einkaufswagen";
     document.getElementById("content" + index)?.appendChild(buttonEinkaufen);
 }
+
 for (let index = 0; index < artikelnDrawing.length; index++) {
     let containerArtikeln = document.createElement("div"); //div element für jede artikel
     document.getElementById("painting")?.appendChild(containerArtikeln); //main div von html dokument
@@ -76,7 +76,7 @@ for (let index = 0; index < artikelnDrawing.length; index++) {
     document.getElementById("paintsContent" + index)?.appendChild(beschreibungArtikeln);
 
     let preisArtikeln = document.createElement("p"); 
-    preisArtikeln.innerHTML = artikelnDrawing[index].preis + "€";
+    preisArtikeln.innerHTML = artikelnDrawing[index].price + "€";
     document.getElementById("paintsContent" + index)?.appendChild(preisArtikeln);
 
     let photoArtikeln = document.createElement("img"); 
@@ -105,7 +105,7 @@ for (let index = 0; index < artikelnSketchbooks.length; index++) {
     document.getElementById("sketchContent" + index)?.appendChild(beschreibungArtikeln);
 
     let preisArtikeln = document.createElement("p"); 
-    preisArtikeln.innerHTML = artikelnSketchbooks[index].preis + "€";
+    preisArtikeln.innerHTML = artikelnSketchbooks[index].price + "€";
     document.getElementById("sketchContent" + index)?.appendChild(preisArtikeln);
 
     let photoArtikeln = document.createElement("img"); 

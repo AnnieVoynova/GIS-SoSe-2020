@@ -1,0 +1,120 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto auto auto auto;
+    background-image: url(images/4k-wallpaper-background-blur-blurred-background-1242348.jpg);
+    padding: 0px;
+    max-width: 100%;
+    align-content: center;
+    
+}
+body header {
+background-image: url(images/header2.png);
+border: 5px solid lightcoral;
+max-width: 100%;
+}
+header h1{
+font-size: 40px;
+color: lightcoral;
+text-shadow: 5px 5px pink;
+text-decoration: underline;
+text-align: center;
+}
+header nav {
+    background-color: rgb(248, 169, 196);
+    position: sticky;
+}
+header nav a{
+    color: papayawhip;
+    text-decoration: none;
+    font-size: 20px;  
+    align-content: left;
+    padding: 2%;
+}
+#wagen{
+    margin-left: 1%;
+}
+img[src="images/logo.png"] {
+margin-left: 48%;
+}
+.uberschrift{
+    color: lightcoral;
+    text-shadow: 5px 5px pink;
+    text-align: center;
+}
+footer a { 
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 25px;  
+}
+footer{
+    text-align: center;
+}
+footer a:hover {
+color: rgb(128, 64, 124);
+font-weight: bold;
+}
+main{
+    align-content: center;
+    align-items: center;
+}
+nav a:hover{ 
+    color:lightcoral;
+    font-weight: bold;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 370px 370px 370px 370px;
+    align-self: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+ } 
+ .boxArtikeln {
+    align-content: center;
+    border:6px solid lightcoral;
+    background-color: lightpink;
+    border-radius: 30px;
+    
+ }
+ button {
+    background-color: rgb(208, 177, 243);
+}
+.pictures{
+   width: 300px;
+   height: 300px;
+   border-radius: 20px;
+}
+@media screen and (max-width:600px) { /*for handy*/
+    header h1{
+        font-size: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.pictures{
+    width: 250px;
+    height: 250px;
+}
+img[src="images/logo.png"] {
+    margin-left: 40%;
+}
+}
+@media screen and (min-width: 600px) and (max-width:1024px) { /*for tablets*/
+ .pictures{
+        width: 300px;
+        height: 300px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (min-width:1024px) and (max-width:1280px){ /* for macbook*/
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
