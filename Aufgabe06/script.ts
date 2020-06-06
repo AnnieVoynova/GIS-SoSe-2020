@@ -76,8 +76,8 @@ function handleZahl(_event: Event): void {
     zahl.innerHTML = " " + countArtikeln;
 
     let target: HTMLElement = (<HTMLElement>_event.target); //Gesamtpreis
-    let hilfe: string = " " + target.getAttribute("index");
-    let arvar: number = + hilfe;
+    let wclick: string = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
+    let arvar: number = + wclick; //string im number umwandeln
     gesamtPreis = gesamtPreis + artikelnAll[arvar].preis;
     console.log("Gesamtpreis:" + gesamtPreis); 
  }
