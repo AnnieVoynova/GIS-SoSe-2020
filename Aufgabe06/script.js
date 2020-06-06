@@ -74,21 +74,33 @@ var Aufgabe06;
         document.getElementById("inking")?.setAttribute("style", "display: normal");
         document.getElementById("painting")?.setAttribute("style", "display: none");
         document.getElementById("sketchbooks")?.setAttribute("style", "display: none");
+        document.getElementById("uber1")?.setAttribute("style", "display: normal");
+        document.getElementById("uber2")?.setAttribute("style", "display: none");
+        document.getElementById("uber3")?.setAttribute("style", "display: none");
     }
     function handleKatPaint(_event) {
         document.getElementById("inking")?.setAttribute("style", "display: none");
         document.getElementById("painting")?.setAttribute("style", "display: normal");
         document.getElementById("sketchbooks")?.setAttribute("style", "display: none");
+        document.getElementById("uber2")?.setAttribute("style", "display: normal");
+        document.getElementById("uber1")?.setAttribute("style", "display: none");
+        document.getElementById("uber3")?.setAttribute("style", "display: none");
     }
     function handleKatSketch(_event) {
         document.getElementById("inking")?.setAttribute("style", "display: none");
         document.getElementById("painting")?.setAttribute("style", "display: none");
         document.getElementById("sketchbooks")?.setAttribute("style", "display: normal");
+        document.getElementById("uber1")?.setAttribute("style", "display: none");
+        document.getElementById("uber2")?.setAttribute("style", "display: none");
+        document.getElementById("uber3")?.setAttribute("style", "display: normal");
     }
     function handleKatAll(_event) {
         document.getElementById("inking")?.setAttribute("style", "display: normal");
         document.getElementById("painting")?.setAttribute("style", "display: normal");
         document.getElementById("sketchbooks")?.setAttribute("style", "display: normal");
+        document.getElementById("uber1")?.setAttribute("style", "display: normal");
+        document.getElementById("uber2")?.setAttribute("style", "display: normal");
+        document.getElementById("uber3")?.setAttribute("style", "display: normal");
     }
 })(Aufgabe06 || (Aufgabe06 = {}));
 //# sourceMappingURL=script.js.map
