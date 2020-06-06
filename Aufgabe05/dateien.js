@@ -11,7 +11,7 @@ var Aufgabe05;
     let paints = { name: "Watercolour Paints", photo: "images/paints11.jpg", beschreibung: "Box set of 36 Coours x 59ml", preis: "30", category: "painting" };
     let pencils = { name: "Derwent Watercolour Pencils", photo: "images/waterpencils.jpg", beschreibung: "12 Colours,extremely good quality", preis: "20", category: "painting" };
     let acryl = { name: "Mont Marte Acrylic Paints", photo: "images/paints12.jpg", beschreibung: "Set of 24 Colours x 36ml", preis: "30", category: "painting" };
-    let rowney = { name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", preis: "Preis:5", category: "painting" };
+    let rowney = { name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", preis: "5", category: "painting" };
     let artikelnDrawing = [watercolors, paints, pencils, acryl, rowney]; //Array
     let sketch = { name: "Sketchbook Hardcover,Spiral", photo: "images/sketchbook1.jpg", beschreibung: "8,5x11; 80 Pages", preis: "10", category: "sketchbooks" };
     let sketchrowney = { name: "Sketchbook D.Rowney", photo: "images/Sketchbook2.jpg", beschreibung: "14x11; 80 pages", preis: "15", category: "sketchbooks" };

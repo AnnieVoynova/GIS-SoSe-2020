@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annie's Art Shop</title>
-    <script src="dateien.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="head">
         <div class="head" id="start">
         <img src="images/logo.png" alt="logom" height="100"> 
         <h1> <i> Annie's Art Shop </i></h1>
         </div>
         <div id="wagen">
-        <img src="images/shoppingcard.png" alt="logo.shopping" height="30">
+        <img src="images/shoppingcard.png" alt="logo.shopping" height="20">  <span id="zahl">0</span>  
         </div>
 
-        <nav>
-            <a href="#painting"><i>Painting</i></a>
-            <a href="#inking"><i>Inking</i></a>
-            <a href="#sketchbooks"><i>Sketchbooks</i></a> 
+       <nav>
+            <a href="#inking" id="ink"><i>Inking</i></a>
+            <a href="#painting" id="paint"><i>Painting</i></a>
+            <a href="#sketchbooks" id="sketch"><i>Sketchbooks</i></a> 
+            <a href="#" id="alles"><i>Show All</i></a>
         </nav>
     </header>
 

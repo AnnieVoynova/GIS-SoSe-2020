@@ -32,6 +32,8 @@ header nav a{
 }
 #wagen{
     margin-left: 1%;
+    font-size: 18px;
+    padding: 5px;
 }
 img[src="images/logo.png"] {
 margin-left: 48%;
@@ -86,6 +88,12 @@ nav a:hover{
    height: 300px;
    border-radius: 20px;
 }
+#zahl{
+    background-color: lightcoral;
+    padding: 1px;
+    border-radius: 5px;
+    visibility: hidden;
+}
 @media screen and (max-width:600px) { /*for handy*/
     header h1{
         font-size: 30px;
@@ -101,6 +109,7 @@ nav a:hover{
 img[src="images/logo.png"] {
     margin-left: 40%;
 }
+
 }
 @media screen and (min-width: 600px) and (max-width:1024px) { /*for tablets*/
  .pictures{

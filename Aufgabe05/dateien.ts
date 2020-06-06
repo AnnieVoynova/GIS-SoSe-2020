@@ -20,7 +20,7 @@ let watercolors: Artikeln = {name: "Koi Watercolour Paints", photo: "images/koiw
 let paints: Artikeln = {name: "Watercolour Paints", photo: "images/paints11.jpg", beschreibung: "Box set of 36 Coours x 59ml", preis: "30", category: "painting" };
 let pencils: Artikeln = {name: "Derwent Watercolour Pencils", photo: "images/waterpencils.jpg", beschreibung: "12 Colours,extremely good quality", preis: "20", category: "painting" };
 let acryl: Artikeln = {name: "Mont Marte Acrylic Paints", photo: "images/paints12.jpg", beschreibung: "Set of 24 Colours x 36ml", preis: "30", category: "painting" };
-let rowney: Artikeln = {name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", preis: "Preis:5", category: "painting" };
+let rowney: Artikeln = {name: "Daler Rowney Acrylic Paints", photo: "images/paint13.jpg", beschreibung: "Simply Acrylic Paint Bottle x75ml, Different Colours available", preis: "5", category: "painting" };
 
 let artikelnDrawing: Artikeln[] = [watercolors, paints, pencils, acryl , rowney]; //Array
 
