@@ -1,6 +1,5 @@
 namespace Aufgabe07 {
 
-//let gesamtPreis: number = 0;
 for (let i: number = 1; i <= localStorage.length / 3; i++) { //Artikeln erstellen
     let containerArtikeln: HTMLDivElement = document.createElement("div");
     containerArtikeln.className = "boxArtikeln";
@@ -19,31 +18,36 @@ for (let i: number = 1; i <= localStorage.length / 3; i++) { //Artikeln erstelle
     containerArtikeln.appendChild(photoArtikeln);
     photoArtikeln.className = "pictures";
    
-    let buttonWeg:  HTMLButtonElement = document.createElement ("button"); //löschen button
+    let buttonWeg:  HTMLButtonElement = document.createElement ("button"); //löschen button(einzelne Elemente)
     buttonWeg.innerHTML = "Löschen";
     containerArtikeln.appendChild(buttonWeg);
     buttonWeg.setAttribute("index", i.toString());
     buttonWeg.addEventListener("click", elementLoschen);
 
-    //gesamtPreis = "" + localStorage.getItem("price" + i);
+    function elementLoschen(_event: Event): void { //funktion einzelne Artikeln loschen
+        window.localStorage.removeItem("namen" + i);
+        window.localStorage.removeItem("price" + i);
+        window.localStorage.removeItem("picture" + i);
+        containerArtikeln.remove();
+    }
   }
 
-let buttonLoschen: HTMLButtonElement = document.createElement ("button");
+let buttonLoschen: HTMLButtonElement = document.createElement ("button"); //alles loschen Button erstellen
 buttonLoschen.innerHTML = "Alles löschen";
 document.getElementById("artikelnCont")?.appendChild(buttonLoschen);
 buttonLoschen.addEventListener("click", allesLoschen);
 
-
-//gesamtPreis = gesamtPreis + artikel[ind].preis;
-//console.log("Gesamtpreis:" + gesamtPreis); 
+let preis: HTMLParagraphElement = document.createElement("p"); //platz fur price erstellen
+document.getElementById("artikelnCont")?.appendChild(preis);
+//gesamtPreis = "" + localStorage.getItem("price" + i);
+    // let target: HTMLElement = (<HTMLElement>_event.target); //Gesamtpreis
+    //let wclick: string = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
+    //let arvar: number = + wclick; //string im number umwandeln
+    //gesamtPreis = gesamtPreis +  + localStorage.getItem("price" + i);
+    //console.log("Gesamtpreis:" + gesamtPreis); 
 
 function allesLoschen(_event: Event): void { //funktion zum alles loschen
     localStorage.clear();
     location.reload();
-}
-function elementLoschen(_event: Event): void { //funktion einzelne Artikeln loschen
-    localStorage.removeItem("namen");
-    localStorage.removeItem("price");
-    localStorage.removeItem("picture");
 }
 }
