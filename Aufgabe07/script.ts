@@ -45,7 +45,8 @@ namespace Aufgabe07 {
      }
       //Aufgabe 06 Teil 1 
     let zahl: HTMLSpanElement = document.getElementById("zahl") as HTMLSpanElement;
-    function handleZahl(_event: Event): void {  
+    let ind: number = 0; //anzahl artikeln gecklickt
+    export function handleZahl(_event: Event): void {  
         countArtikeln++ ; //Zahl der Artikeln
         zahl.setAttribute("style", "visibility: visible" );
         zahl.innerHTML = " " + countArtikeln;
@@ -55,6 +56,10 @@ namespace Aufgabe07 {
         let arvar: number = + wclick; //string im number umwandeln
         gesamtPreis = gesamtPreis + artikel[arvar].preis;
         console.log("Gesamtpreis:" + gesamtPreis); 
+        ind++ ;
+        localStorage.setItem("namen" + ind, artikel[arvar].name); //im local storage Dateien speichern
+        localStorage.setItem("price" + ind, (artikel[arvar].preis).toString());
+        localStorage.setItem("picture" + ind, artikel[arvar].photo);
      }
     let inks: HTMLElement = document.getElementById("ink") as HTMLElement;
     let paint: HTMLElement = document.getElementById("paint") as HTMLElement;
@@ -99,10 +104,5 @@ namespace Aufgabe07 {
         document.getElementById("uber3")?.setAttribute("style", "display: normal" );
         
     }
-    //Aufgabe07 Teil 2
-  /* function cartAnzahl() {
-localStorage.setItem('cartAnzahl', 1);
-
-   } */
 }
     

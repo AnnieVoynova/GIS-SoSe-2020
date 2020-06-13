@@ -97,6 +97,7 @@ nav a:hover{
     border-radius: 5px;
     visibility: hidden;
 }
+
 @media screen and (max-width:600px) { /*for handy*/
     header h1{
         font-size: 30px;

@@ -40,6 +40,7 @@ var Aufgabe07;
     Aufgabe07.artikelnErstellen = artikelnErstellen;
     //Aufgabe 06 Teil 1 
     let zahl = document.getElementById("zahl");
+    let ind = 0; //anzahl artikeln gecklickt
     function handleZahl(_event) {
         countArtikeln++; //Zahl der Artikeln
         zahl.setAttribute("style", "visibility: visible");
@@ -49,7 +50,12 @@ var Aufgabe07;
         let arvar = +wclick; //string im number umwandeln
         gesamtPreis = gesamtPreis + Aufgabe07.artikel[arvar].preis;
         console.log("Gesamtpreis:" + gesamtPreis);
+        ind++;
+        localStorage.setItem("namen" + ind, Aufgabe07.artikel[arvar].name); //im local storage Dateien speichern
+        localStorage.setItem("price" + ind, (Aufgabe07.artikel[arvar].preis).toString());
+        localStorage.setItem("picture" + ind, Aufgabe07.artikel[arvar].photo);
     }
+    Aufgabe07.handleZahl = handleZahl;
     let inks = document.getElementById("ink");
     let paint = document.getElementById("paint");
     let sketchs = document.getElementById("sketch");
@@ -90,10 +96,5 @@ var Aufgabe07;
         document.getElementById("uber2")?.setAttribute("style", "display: normal");
         document.getElementById("uber3")?.setAttribute("style", "display: normal");
     }
-    //Aufgabe07 Teil 2
-    /* function cartAnzahl() {
-  localStorage.setItem('cartAnzahl', 1);
-  
-     } */
 })(Aufgabe07 || (Aufgabe07 = {}));
 //# sourceMappingURL=script.js.map
