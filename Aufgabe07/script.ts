@@ -100,5 +100,9 @@ namespace Aufgabe07 {
         
     }
     //Aufgabe07 Teil 2
+  /* function cartAnzahl() {
+localStorage.setItem('cartAnzahl', 1);
+
+   } */
+}
     
-    }
