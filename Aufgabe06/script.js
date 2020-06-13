@@ -57,8 +57,8 @@ var Aufgabe06;
         zahl.setAttribute("style", "visibility: visible");
         zahl.innerHTML = " " + countArtikeln;
         let target = _event.target; //Gesamtpreis
-        let hilfe = " " + target.getAttribute("index");
-        let arvar = +hilfe;
+        let wclick = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
+        let arvar = +wclick; //string im number umwandeln
         gesamtPreis = gesamtPreis + artikelnAll[arvar].preis;
         console.log("Gesamtpreis:" + gesamtPreis);
     }
