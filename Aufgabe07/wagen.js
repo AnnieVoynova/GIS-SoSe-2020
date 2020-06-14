@@ -2,7 +2,7 @@
 var Aufgabe07;
 (function (Aufgabe07) {
     let gesamtSumme = 0;
-    let preis = document.createElement("p");
+    let preis = document.createElement("p"); //platz fur price erstellen
     preis.id = "summe";
     for (let i = 1; i <= localStorage.length / 3; i++) { //Artikeln erstellen
         let containerArtikeln = document.createElement("div");
@@ -34,7 +34,6 @@ var Aufgabe07;
             preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€";
         }
     }
-    //let preis: HTMLParagraphElement = document.createElement("p"); //platz fur price erstellen
     preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€"; //Summe rechnen
     document.getElementById("artikelnCont")?.appendChild(preis);
     let buttonLoschen = document.createElement("button"); //alles loschen Button erstellen
