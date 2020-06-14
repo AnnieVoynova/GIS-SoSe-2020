@@ -1,6 +1,9 @@
 "use strict";
 var Aufgabe07;
 (function (Aufgabe07) {
+    let gesamtSumme = 0;
+    let preis = document.createElement("p");
+    preis.id = "summe";
     for (let i = 1; i <= localStorage.length / 3; i++) { //Artikeln erstellen
         let containerArtikeln = document.createElement("div");
         containerArtikeln.className = "boxArtikeln";
@@ -20,25 +23,24 @@ var Aufgabe07;
         containerArtikeln.appendChild(buttonWeg);
         buttonWeg.setAttribute("index", i.toString());
         buttonWeg.addEventListener("click", elementLoschen);
+        let hilfe = +localStorage.getItem("price" + i); // string in number umwandeln
+        gesamtSumme = gesamtSumme + hilfe;
         function elementLoschen(_event) {
+            gesamtSumme = gesamtSumme - hilfe;
             window.localStorage.removeItem("namen" + i);
             window.localStorage.removeItem("price" + i);
             window.localStorage.removeItem("picture" + i);
             containerArtikeln.remove();
+            preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€";
         }
     }
+    //let preis: HTMLParagraphElement = document.createElement("p"); //platz fur price erstellen
+    preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€"; //Summe rechnen
+    document.getElementById("artikelnCont")?.appendChild(preis);
     let buttonLoschen = document.createElement("button"); //alles loschen Button erstellen
     buttonLoschen.innerHTML = "Alles löschen";
     document.getElementById("artikelnCont")?.appendChild(buttonLoschen);
     buttonLoschen.addEventListener("click", allesLoschen);
-    let preis = document.createElement("p"); //platz fur price erstellen
-    document.getElementById("artikelnCont")?.appendChild(preis);
-    //gesamtPreis = "" + localStorage.getItem("price" + i);
-    // let target: HTMLElement = (<HTMLElement>_event.target); //Gesamtpreis
-    //let wclick: string = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
-    //let arvar: number = + wclick; //string im number umwandeln
-    //gesamtPreis = gesamtPreis +  + localStorage.getItem("price" + i);
-    //console.log("Gesamtpreis:" + gesamtPreis); 
     function allesLoschen(_event) {
         localStorage.clear();
         location.reload();

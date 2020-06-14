@@ -83,6 +83,19 @@ nav a:hover{
     border-radius: 30px;
     
  }
+ #summe{
+     color: lightcoral;
+     font-weight: bold;
+     font-size: 20px;
+     text-decoration: underline;
+ }
+ /*.Artikeln{
+    align-content: center;
+    border:6px solid plum;
+    background-color:white;
+    border-radius: 30px;
+    
+ } */
  button {
     background-color: rgb(208, 177, 243);
 }
@@ -97,7 +110,10 @@ nav a:hover{
     border-radius: 5px;
     visibility: hidden;
 }
-
+/*.Artikeln{
+    align-self: center;
+    align-content: center;
+} */
 @media screen and (max-width:600px) { /*for handy*/
     header h1{
         font-size: 30px;

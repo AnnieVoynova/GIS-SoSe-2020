@@ -49,7 +49,7 @@ var Aufgabe07;
         let wclick = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
         let arvar = +wclick; //string im number umwandeln
         gesamtPreis = gesamtPreis + Aufgabe07.artikel[arvar].preis;
-        console.log("Gesamtpreis:" + gesamtPreis);
+        console.log("Gesamtpreis:" + gesamtPreis + "€");
         ind++;
         localStorage.setItem("namen" + ind, Aufgabe07.artikel[arvar].name); //im local storage Dateien speichern
         localStorage.setItem("price" + ind, (Aufgabe07.artikel[arvar].preis).toString());

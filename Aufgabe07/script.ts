@@ -55,8 +55,9 @@ namespace Aufgabe07 {
         let wclick: string = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
         let arvar: number = + wclick; //string im number umwandeln
         gesamtPreis = gesamtPreis + artikel[arvar].preis;
-        console.log("Gesamtpreis:" + gesamtPreis); 
+        console.log("Gesamtpreis:" + gesamtPreis + "€"); 
         ind++ ;
+
         localStorage.setItem("namen" + ind, artikel[arvar].name); //im local storage Dateien speichern
         localStorage.setItem("price" + ind, (artikel[arvar].preis).toString());
         localStorage.setItem("picture" + ind, artikel[arvar].photo);

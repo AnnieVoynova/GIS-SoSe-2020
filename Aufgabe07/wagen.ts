@@ -1,5 +1,9 @@
 namespace Aufgabe07 {
 
+let gesamtSumme: number = 0;
+let preis: HTMLParagraphElement = document.createElement("p"); //platz fur price erstellen
+preis.id = "summe";
+
 for (let i: number = 1; i <= localStorage.length / 3; i++) { //Artikeln erstellen
     let containerArtikeln: HTMLDivElement = document.createElement("div");
     containerArtikeln.className = "boxArtikeln";
@@ -24,27 +28,27 @@ for (let i: number = 1; i <= localStorage.length / 3; i++) { //Artikeln erstelle
     buttonWeg.setAttribute("index", i.toString());
     buttonWeg.addEventListener("click", elementLoschen);
 
+    let hilfe: number = +  localStorage.getItem ("price" + i)!; // string in number umwandeln
+    gesamtSumme = gesamtSumme + hilfe;
+
     function elementLoschen(_event: Event): void { //funktion einzelne Artikeln loschen
+        gesamtSumme = gesamtSumme - hilfe;
         window.localStorage.removeItem("namen" + i);
         window.localStorage.removeItem("price" + i);
         window.localStorage.removeItem("picture" + i);
         containerArtikeln.remove();
+        preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€";
     }
   }
+
+
+preis.innerHTML = "Gesamt Summe:" + gesamtSumme + "€"; //Summe rechnen
+document.getElementById("artikelnCont")?.appendChild(preis);
 
 let buttonLoschen: HTMLButtonElement = document.createElement ("button"); //alles loschen Button erstellen
 buttonLoschen.innerHTML = "Alles löschen";
 document.getElementById("artikelnCont")?.appendChild(buttonLoschen);
 buttonLoschen.addEventListener("click", allesLoschen);
-
-let preis: HTMLParagraphElement = document.createElement("p"); //platz fur price erstellen
-document.getElementById("artikelnCont")?.appendChild(preis);
-//gesamtPreis = "" + localStorage.getItem("price" + i);
-    // let target: HTMLElement = (<HTMLElement>_event.target); //Gesamtpreis
-    //let wclick: string = " " + target.getAttribute("index"); //klärt auf welchem button man gecklickt hat
-    //let arvar: number = + wclick; //string im number umwandeln
-    //gesamtPreis = gesamtPreis +  + localStorage.getItem("price" + i);
-    //console.log("Gesamtpreis:" + gesamtPreis); 
 
 function allesLoschen(_event: Event): void { //funktion zum alles loschen
     localStorage.clear();
