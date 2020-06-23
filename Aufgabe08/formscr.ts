@@ -4,24 +4,22 @@ namespace Aufgabe08 {
     button = <HTMLButtonElement> document.getElementById("button");
     button.addEventListener("click", handleSend);
 
-    let formData: FormData = new FormData(document.forms[0]);
-
+    
     async function handleSend(): Promise <void> { //function,die aufgeruft wird wenn man auf den button klickt
-        //getData(await sendData());
+        //console.log("test1");
+        let formData: FormData = new FormData(document.forms[0]);
         let url: string = "https://testgissomse2020.herokuapp.com/";
         // tslint:disable-next-line: no-any //quickfix "any" error
+       // console.log(formData.get("name"));
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
         let response: Response = await fetch(url);
         let ausgabe: string = await response.text();
+        console.log(ausgabe);
         //let ausgabe = response;
-        console.log(ausgabe); 
+        //console.log(ausgabe); 
     }
+}
     
       
-    /*for (let entry of formData) {
-    console.log(entry);
-    console.log("name: " + entry[0]);
-    console.log("value: " + entry[1]);
-    }*/ 
-}
+    
