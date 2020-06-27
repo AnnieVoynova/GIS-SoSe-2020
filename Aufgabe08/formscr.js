@@ -10,6 +10,7 @@ var Aufgabe08;
         let url = "https://testgissomse2020.herokuapp.com/";
         // tslint:disable-next-line: no-any //quickfix "any" error
         // console.log(formData.get("name"));
+        // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         let response = await fetch(url);

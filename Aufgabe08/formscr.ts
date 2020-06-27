@@ -11,6 +11,7 @@ namespace Aufgabe08 {
         let url: string = "https://testgissomse2020.herokuapp.com/";
         // tslint:disable-next-line: no-any //quickfix "any" error
        // console.log(formData.get("name"));
+        // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
         let response: Response = await fetch(url);
