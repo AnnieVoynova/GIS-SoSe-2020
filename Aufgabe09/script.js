@@ -11,7 +11,7 @@ var Aufgabe09;
     async function handleSend() {
         //console.log("test1");
         let formData = new FormData(document.forms[0]);
-        let url = "https://testgissomse2020.herokuapp.com/";
+        let url = "https://testgissomse2020.herokuapp.com";
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         url = url + "/html" + "?" + query.toString();
@@ -25,7 +25,7 @@ var Aufgabe09;
     async function handleJson() {
         //console.log("test1");
         let formData = new FormData(document.forms[0]);
-        let url = "https://testgissomse2020.herokuapp.com/";
+        let url = "https://testgissomse2020.herokuapp.com";
         // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         url = url + "/json" + "?" + query.toString();

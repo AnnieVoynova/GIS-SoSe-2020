@@ -11,7 +11,7 @@ namespace Aufgabe09 {
     async function handleSend(): Promise <void> { 
         //console.log("test1");
         let formData: FormData = new FormData(document.forms[0]);
-        let url: string = "https://testgissomse2020.herokuapp.com/";
+        let url: string = "https://testgissomse2020.herokuapp.com";
         // tslint:disable-next-line: no-any
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "/html" + "?" + query.toString();
@@ -26,7 +26,7 @@ namespace Aufgabe09 {
     async function handleJson(): Promise <void> {
          //console.log("test1");
          let formData: FormData = new FormData(document.forms[0]);
-         let url: string = "https://testgissomse2020.herokuapp.com/";
+         let url: string = "https://testgissomse2020.herokuapp.com";
          // tslint:disable-next-line: no-any
          let query: URLSearchParams = new URLSearchParams(<any>formData);
          url = url + "/json" + "?" + query.toString();
