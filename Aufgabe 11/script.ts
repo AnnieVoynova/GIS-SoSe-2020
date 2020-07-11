@@ -1,3 +1,4 @@
+namespace Aufgabe11 {
 let button: HTMLButtonElement; //= document.getElementById("button");
 button = <HTMLButtonElement> document.getElementById("buttonData");
 button.addEventListener("click", handleSend);
@@ -22,4 +23,5 @@ async function handlePull(): Promise<void> {
     let console: HTMLElement = <HTMLElement>document.getElementById("serverAntwort");  
     console.innerHTML = ausgabeString;
 
+}
 }
