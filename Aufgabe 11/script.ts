@@ -18,6 +18,7 @@ async function handleSend(): Promise <void> {
 
 async function handlePull(): Promise<void> {
     let url: string = "https://testgissomse2020.herokuapp.com";
+    url = url + "/pull";
     let response: Response = await fetch(url);
     let ausgabeString: string = await response.text();
     let console: HTMLElement = <HTMLElement>document.getElementById("serverAntwort");  

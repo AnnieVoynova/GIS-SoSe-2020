@@ -18,6 +18,7 @@ var Aufgabe11;
     }
     async function handlePull() {
         let url = "https://testgissomse2020.herokuapp.com";
+        url = url + "/pull";
         let response = await fetch(url);
         let ausgabeString = await response.text();
         let console = document.getElementById("serverAntwort");
