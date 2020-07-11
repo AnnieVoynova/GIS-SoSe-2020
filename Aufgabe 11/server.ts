@@ -2,13 +2,14 @@ import * as Http from "http";
 import * as Url from "url";
 import * as Mongo from "mongodb";
 
-export namespace A11Server {
+export namespace Aufgabe11 {
+  
+  console.log("Starting server");
 
   let formData: Mongo.Collection;
   let mongoUrl: string = "mongodb+srv://userdb:<dkrjf5678>@gis-ist-geil.qtn3c.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
-  console.log("Starting server");
-
+ 
   let port: number = Number(process.env.PORT);
   if (!port)
     port = 8100;

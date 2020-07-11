@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.A11Server = void 0;
+exports.Aufgabe11 = void 0;
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
-var A11Server;
-(function (A11Server) {
+var Aufgabe11;
+(function (Aufgabe11) {
+    console.log("Starting server");
     let formData;
     let mongoUrl = "mongodb+srv://userdb:<dkrjf5678>@gis-ist-geil.qtn3c.mongodb.net/<dbname>?retryWrites=true&w=majority";
-    console.log("Starting server");
     let port = Number(process.env.PORT);
     if (!port)
         port = 8100;
@@ -47,5 +47,5 @@ var A11Server;
         }
         _response.end();
     }
-})(A11Server = exports.A11Server || (exports.A11Server = {}));
+})(Aufgabe11 = exports.Aufgabe11 || (exports.Aufgabe11 = {}));
 //# sourceMappingURL=server.js.map
