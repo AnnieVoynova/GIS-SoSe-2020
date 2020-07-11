@@ -43,7 +43,7 @@ var Aufgabe11;
             if (url.pathname == "/pull") {
                 //let urlJson: string = JSON.stringify(url.query);
                 //_response.write(urlJson); 
-                _response.write(JSON.stringify(await JSON.stringify(formData.find().toArray())));
+                _response.write(JSON.stringify(await (formData.find().toArray())));
             }
         }
         _response.end();
