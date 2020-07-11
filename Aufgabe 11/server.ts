@@ -31,7 +31,7 @@ export namespace Aufgabe11 {
     let options: Mongo.MongoClientOptions = {useNewUrlParser: true, useUnifiedTopology: true};
     let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
     await mongoClient.connect();
-    formData =  mongoClient.db("Test").collection("Students");
+    formData =  mongoClient.db("test").collection("students");
     console.log("Connection to Database", formData != undefined);
   }
 
