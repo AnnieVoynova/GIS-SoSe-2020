@@ -7,7 +7,7 @@ export namespace Aufgabe11 {
   console.log("Starting server");
 
   let formData: Mongo.Collection;
-  let mongoUrl: string = "mongodb+srv://userdb:<dkrjf5678>@gis-ist-geil.qtn3c.mongodb.net/<dbname>?retryWrites=true&w=majority";
+  let mongoUrl: string = "mongodb+srv://userdb:dkrjf5678@gis-ist-geil.qtn3c.mongodb.net/test?retryWrites=true&w=majority";
 
  
   let port: number = Number(process.env.PORT);

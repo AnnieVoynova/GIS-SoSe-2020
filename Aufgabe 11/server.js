@@ -8,7 +8,7 @@ var Aufgabe11;
 (function (Aufgabe11) {
     console.log("Starting server");
     let formData;
-    let mongoUrl = "mongodb+srv://userdb:<dkrjf5678>@gis-ist-geil.qtn3c.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    let mongoUrl = "mongodb+srv://userdb:dkrjf5678@gis-ist-geil.qtn3c.mongodb.net/test?retryWrites=true&w=majority";
     let port = Number(process.env.PORT);
     if (!port)
         port = 8100;
