@@ -12,17 +12,11 @@ async function handleSend() {
     // tslint:disable-next-line: no-any
     let query = new URLSearchParams(formData);
     url = url + "/datenbank" + "?" + query.toString();
-    await fetch(url, {
-        mode: "cors",
-        credentials: "include"
-    });
+    await fetch(url);
 }
 async function handlePull() {
     let url = "https://testgissomse2020.herokuapp.com";
-    let response = await fetch(url, {
-        mode: "cors",
-        credentials: "include"
-    });
+    let response = await fetch(url);
     let ausgabeString = await response.text();
     let console = document.getElementById("serverAntwort");
     console.innerHTML = ausgabeString;
