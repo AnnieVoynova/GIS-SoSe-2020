@@ -48,7 +48,7 @@ var Aufgabe11;
             }
             if (url.pathname == "/delete") {
                 _response.write(JSON.stringify(await (formData.find().toArray())));
-                _response.write(formData.deleteOne({ "firstName": "Hallo" }));
+                formData.deleteOne(url.query);
                 _response.write("1234321");
                 //formData.deleteOne({ "firstName": url.query["firstName"]});
             }
