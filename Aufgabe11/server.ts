@@ -54,9 +54,16 @@ export namespace Aufgabe11 {
             formData.insertOne(url.query);     
         } 
           if (url.pathname == "/pull") {
-          //let urlJson: string = JSON.stringify(url.query);
-          //_response.write(urlJson); 
-         _response.write(JSON.stringify(await(formData.find().toArray())));
+            //let urlJson: string = JSON.stringify(url.query);
+            //_response.write(urlJson); 
+             _response.write(JSON.stringify(await(formData.find().toArray())));
+             _response.write("HALLO");
+          }
+          if (url.pathname == "/delete") {
+            _response.write(JSON.stringify(await(formData.find().toArray())));
+            //formData.deleteOne({ "firstName": "Hallo"});
+            _response.write("1234321");
+            //formData.deleteOne({ "first name": "annie"});
           }
       }
       _response.end();

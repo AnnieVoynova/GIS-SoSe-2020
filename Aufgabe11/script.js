@@ -7,6 +7,9 @@ var Aufgabe11;
     let buttonJs;
     buttonJs = document.getElementById("button");
     buttonJs.addEventListener("click", handlePull);
+    let buttonDel;
+    buttonDel = document.getElementById("button-delete");
+    buttonDel.addEventListener("click", handleDelete);
     async function handleSend() {
         //console.log("test1");
         let formData = new FormData(document.forms[0]);
@@ -19,6 +22,18 @@ var Aufgabe11;
     async function handlePull() {
         let url = "https://testgissomse2020.herokuapp.com";
         url = url + "/pull";
+        let response = await fetch(url);
+        let ausgabeString = await response.text();
+        let console = document.getElementById("serverAntwort");
+        console.innerHTML = ausgabeString;
+    }
+    async function handleDelete() {
+        //console.log("test1");
+        let formData = new FormData(document.forms[0]);
+        let url = "https://testgissomse2020.herokuapp.com";
+        // tslint:disable-next-line: no-any
+        let query = new URLSearchParams(formData);
+        url = url + "/delete" + "?" + query.toString();
         let response = await fetch(url);
         let ausgabeString = await response.text();
         let console = document.getElementById("serverAntwort");
