@@ -57,12 +57,13 @@ export namespace Aufgabe11 {
             //let urlJson: string = JSON.stringify(url.query);
             //_response.write(urlJson); 
              _response.write(JSON.stringify(await(formData.find().toArray())));
-             _response.write("HALLO");
           }
           if (url.pathname == "/delete") {
-            _response.write(JSON.stringify(await(formData.find().toArray())));
-            formData.deleteOne(url.query);
-            _response.write("1234321");
+            //handleRequest(_response, await formData.removeOne(url.query));
+            //_response.write(JSON.stringify(await(formData.find().toArray())));
+            //formData.deleteOne(url.query);
+            formData.deleteOne({"firstName": "Hallo"});
+            //_response.write("1234321");
             //formData.deleteOne({ "firstName": url.query["firstName"]});
           }
       }
