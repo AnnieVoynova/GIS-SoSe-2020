@@ -62,9 +62,9 @@ export namespace Aufgabe11 {
             //handleRequest(_response, await formData.removeOne(url.query));
             //_response.write(JSON.stringify(await(formData.find().toArray())));
             //formData.deleteOne(url.query);
-            formData.deleteOne({"firstName": "Hallo"});
+            //formData.deleteOne({"firstName": "Hallo"});
             //_response.write("1234321");
-            //formData.deleteOne({ "firstName": url.query["firstName"]});
+            formData.deleteOne({ "firstName": url.query["firstName"]});
           }
       }
       _response.end();
